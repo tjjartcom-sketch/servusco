@@ -835,6 +835,12 @@
       bookingForm.addEventListener('submit', function (e) {
         e.preventDefault();
 
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18390401108/NvOSCPmmj-McENSAncFE',
+          'value': 1.0,
+          'currency': 'SAR'
+        });
+
         const fullName = (document.getElementById('fullName')?.value || '').trim();
         const phone = (document.getElementById('phone')?.value || '').trim();
         const city = document.getElementById('cityField')?.value || '';
