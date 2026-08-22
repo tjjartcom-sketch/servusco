@@ -644,6 +644,38 @@
         </div>
       </div>
 
+      <div class="grid sm:grid-cols-2 gap-6">
+        <div>
+          <label class="block text-sm font-bold text-slate-700 mb-2">اختر الخدمة</label>
+          <select required id="serviceType"
+            class="w-full px-4 py-3.5 rounded-xl border border-slate-200 focus:border-sky-500 focus:ring-4 focus:ring-sky-100 outline-none transition text-[16px] bg-white">
+            <option value="" disabled selected>اختر نوع الخدمة</option>
+            <option value="العرض الاول  329 ر.س">العرض الاول 329 ر.س</option>
+            <option value="العرض الثاني 549 ر.س">العرض الثاني 549 ر.س</option>
+            <option value="تنظيف كنب للشخص الواحد 30 ر.س">تنظيف كنب للشخص الواحد 30 ر.س</option>
+            <option value="تنظيف جلسة عربية للشخص الواحد 22 ر.س">تنظيف جلسة عربية للشخص الواحد 22 ر.س</option>
+            <option value="تنظيف مساند ظهر للشخص الواحد 18 ر.س">تنظيف مساند ظهر للشخص الواحد 18 ر.س</option>
+            <option value="تنظيف السجاد و الموكيت 8 ر.س">تنظيف السجاد و الموكيت 8 ر.س</option>
+            <option value="تنظيف مكيف شباك 49 ر.س">تنظيف مكيف شباك 49 ر.س</option>
+            <option value="تنظيف مكيف اسبيلت داخلي 29 ر.س">تنظيف مكيف اسبيلت داخلي 29 ر.س</option>
+            <option value="تنظيف مكيف اسبيلت داخلي و خارجي 99 ر.س">تنظيف مكيف اسبيلت داخلي و خارجي 99 ر.س</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm font-bold text-slate-700 mb-2">نوع المكان</label>
+          <select required id="placeType"
+            class="w-full px-4 py-3.5 rounded-xl border border-slate-200 focus:border-sky-500 focus:ring-4 focus:ring-sky-100 outline-none transition text-[16px] bg-white">
+            <option value="" disabled selected>اختر نوع المكان</option>
+            <option value="فيلا">فيلا</option>
+            <option value="شقة">شقة</option>
+            <option value="قصر">قصر</option>
+            <option value="مرافق ادارية">مرافق ادارية</option>
+            <option value="مطاعم">مطاعم</option>
+            <option value="كفيهات">كفيهات</option>
+          </select>
+        </div>
+      </div>
+
       <div class="grid sm:grid-cols-3 gap-4">
         <div>
           <label class="block text-sm font-bold text-slate-700 mb-2" for="roomCount">عدد الغرف <span class="font-normal text-slate-400">(اختياري)</span></label>
@@ -674,59 +706,26 @@
         </div>
       </div>
 
-      <div class="grid sm:grid-cols-2 gap-6">
-        <div>
-          <label class="block text-sm font-bold text-slate-700 mb-2">المدينة</label>
-          <select required id="cityField"
-            class="w-full px-4 py-3.5 rounded-xl border border-slate-200 focus:border-sky-500 focus:ring-4 focus:ring-sky-100 outline-none transition text-[16px] bg-white">
-            <option value="" disabled selected>اختر المدينة</option>
-            <option value="جدة">جدة</option>
-            <option value="الطائف">الطائف</option>
-            <option value="مكة">مكة</option>
-          </select>
-        </div>
-        <div>
-          <label class="block text-sm font-bold text-slate-700 mb-2">نوع المكان</label>
-          <select required id="placeType"
-            class="w-full px-4 py-3.5 rounded-xl border border-slate-200 focus:border-sky-500 focus:ring-4 focus:ring-sky-100 outline-none transition text-[16px] bg-white">
-            <option value="" disabled selected>اختر نوع المكان</option>
-            <option value="فيلا">فيلا</option>
-            <option value="شقة">شقة</option>
-            <option value="قصر">قصر</option>
-            <option value="مرافق ادارية">مرافق ادارية</option>
-            <option value="مطاعم">مطاعم</option>
-            <option value="كفيهات">كفيهات</option>
-          </select>
-        </div>
+      <div>
+        <label class="block text-sm font-bold text-slate-700 mb-2">المدينة</label>
+        <select required id="cityField"
+          class="w-full px-4 py-3.5 rounded-xl border border-slate-200 focus:border-sky-500 focus:ring-4 focus:ring-sky-100 outline-none transition text-[16px] bg-white">
+          <option value="" disabled selected>اختر المدينة</option>
+          <option value="جدة">جدة</option>
+          <option value="الطائف">الطائف</option>
+          <option value="مكة">مكة</option>
+        </select>
       </div>
 
-      <div class="grid sm:grid-cols-2 gap-6">
-        <div>
-          <label class="block text-sm font-bold text-slate-700 mb-2">اختر الخدمة</label>
-          <select required id="serviceType"
-            class="w-full px-4 py-3.5 rounded-xl border border-slate-200 focus:border-sky-500 focus:ring-4 focus:ring-sky-100 outline-none transition text-[16px] bg-white">
-            <option value="" disabled selected>اختر نوع الخدمة</option>
-            <option value="العرض الاول  329 ر.س">العرض الاول 329 ر.س</option>
-            <option value="العرض الثاني 549 ر.س">العرض الثاني 549 ر.س</option>
-            <option value="تنظيف كنب للشخص الواحد 30 ر.س">تنظيف كنب للشخص الواحد 30 ر.س</option>
-            <option value="تنظيف جلسة عربية للشخص الواحد 22 ر.س">تنظيف جلسة عربية للشخص الواحد 22 ر.س</option>
-            <option value="تنظيف مساند ظهر للشخص الواحد 18 ر.س">تنظيف مساند ظهر للشخص الواحد 18 ر.س</option>
-            <option value="تنظيف السجاد و الموكيت 8 ر.س">تنظيف السجاد و الموكيت 8 ر.س</option>
-            <option value="تنظيف مكيف شباك 49 ر.س">تنظيف مكيف شباك 49 ر.س</option>
-            <option value="تنظيف مكيف اسبيلت داخلي 29 ر.س">تنظيف مكيف اسبيلت داخلي 29 ر.س</option>
-            <option value="تنظيف مكيف اسبيلت داخلي و خارجي 99 ر.س">تنظيف مكيف اسبيلت داخلي و خارجي 99 ر.س</option>
-          </select>
+      <div>
+        <label class="block text-sm font-bold text-slate-700 mb-2">التاريخ والوقت المفضل</label>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <input required type="date" id="preferredDate" dir="ltr"
+            class="w-full px-4 py-3.5 rounded-xl border border-slate-200 focus:border-sky-500 focus:ring-4 focus:ring-sky-100 outline-none transition text-[16px] text-left bg-white">
+          <input required type="time" id="preferredTime" dir="ltr" min="09:00" max="22:00"
+            class="w-full px-4 py-3.5 rounded-xl border border-slate-200 focus:border-sky-500 focus:ring-4 focus:ring-sky-100 outline-none transition text-[16px] text-left bg-white">
         </div>
-        <div>
-          <label class="block text-sm font-bold text-slate-700 mb-2">التاريخ والوقت المفضل</label>
-          <div class="grid gap-4">
-            <input required type="date" id="preferredDate" dir="ltr"
-              class="w-full px-4 py-3.5 rounded-xl border border-slate-200 focus:border-sky-500 focus:ring-4 focus:ring-sky-100 outline-none transition text-[16px] text-left bg-white">
-            <input required type="time" id="preferredTime" dir="ltr" min="09:00" max="22:00"
-              class="w-full px-4 py-3.5 rounded-xl border border-slate-200 focus:border-sky-500 focus:ring-4 focus:ring-sky-100 outline-none transition text-[16px] text-left bg-white">
-          </div>
-          <p class="text-xs text-slate-400 mt-2">أوقات العمل: كل أيام الأسبوع ماعدا الجمعة، من 9 صباحاً حتى 10 مساءً</p>
-        </div>
+        <p class="text-xs text-slate-400 mt-2">أوقات العمل: كل أيام الأسبوع ماعدا الجمعة، من 9 صباحاً حتى 10 مساءً</p>
       </div>
 
       <button type="submit"
